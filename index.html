@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!-- Sergio Arévalo Sanz-->
+<html>
+    <head>
+        <title>Tabla iPod con CSS</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            #tabla{
+                height: 425px;
+                width: 553px;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            img.imagen{         
+                display: block;
+                margin: auto;
+                height: 48px;
+                width: 47px;
+            }
+            h1{
+                font-size: 45px;
+            }
+            td{
+                border: 1px solid black;
+                text-align: center;
+                font-size: 20px;
+                height: 50px;
+                width: 100px;
+                font-weight: bold;
+            }
+            td.az{
+                background-color: blue;
+                color: black;
+            }
+            td.rojo{
+                background-color:red;
+                color: white;
+            }
+            td.azul{
+                background-color: blue;
+                color: black;
+                height: 1px;
+            }
+            td.gris{
+                background-color: gray;
+                font-size: 42px;
+                height: 85px;
+                font-weight: normal;
+            }
+
+            td.amar{
+                background-color: yellow;
+                color: black;
+                height: 130px;
+            }
+            #p{
+                background-color: red;
+                color: white;
+                height: 10px;
+
+            }           
+            #cel{
+                color: red;
+                text-align: left;
+                font-weight: normal;
+
+            }
+            #cel2{
+                background-color: blue;
+                color: red;
+                text-align: left;
+                font-weight: normal;
+            }        
+        </style>
+    </head>
+    <body>
+        <div>
+            <table id="tabla">
+                <h1><b>Ejercicio práctico con Tablas</b></h1>
+                <tr>
+                    <td></td>
+                    <td colspan="3" class="az"><img src="120_ipod.png" alt="120" class="imagen"></td>
+                    <td colspan="2" class="az"><img src="100_ipod.png" alt="100" class="imagen"></td>
+                </tr>
+
+                <tr>
+                    <td class="rojo" rowspan="2">Capacidad</td>
+                    <td rowspan="2" class="gris">2GB</td>
+                    <td rowspan="2" class="gris">4GB</td>
+                    <td rowspan="2" class="gris">8GB</td>
+                    <td rowspan="2" class="gris">32GB</td>
+                    <td rowspan="2" class="gris">2GB</td>
+                </tr>
+
+                <tr></tr>
+                
+                <tr>
+                    <td class="rojo">Colores</td>
+                    <td>Blanco</td>
+                    <td>
+                        <ul id="cel">
+                            <li>Negro</li>
+                            <li>Rosa</li>
+                            <li>Dorado</li>
+                        </ul>
+                    </td>
+                    <td>Negro</td>
+                    <td colspan="2" id="cel2">
+                        <ul>
+                            <li>Negro</li>
+                            <li>Blanco</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="p"> Pantalla</td>
+                    <td colspan="3" class="azul"><b>3 pulgadas</b></td>
+                    <td colspan="2" class="azul"><b>7 pulgadas</b></td>
+                </tr>
+                <tr>
+                    <td class="rojo" rowspan="2">Tiempo <br>de carga</td>
+                    <td colspan="3" rowspan="2" class="az">1 hora</td>
+                    <td colspan="2" class="amar"> 5 horas</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="az">30 minutos para 75%</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
